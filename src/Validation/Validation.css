@@ -1,0 +1,9 @@
+.Validation > p{
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    background: linear-gradient(to right, rgb(6, 16, 49), #1baed3);
+    box-shadow: 0 2px 2px #152757;
+    width: 300px;
+    color: white;
+    text-shadow: 0 1px 1px rgb(54, 54, 54);
+}

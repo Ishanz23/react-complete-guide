@@ -1,0 +1,24 @@
+.Person {
+    width: 60%;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background: rgb(20, 20, 20);
+    border: 1px solid rgb(41, 41, 41);
+    box-shadow: 0 2px 3px rgb(49, 49, 49);
+    color: white;
+    text-align: center;
+}
+
+.Person input {
+    padding: 0.25rem;
+    text-align: center;
+    margin: 0.25rem 0.5rem;
+}
+
+.Person button {
+    background: rgb(89, 18, 156);
+    color: white;
+    border: none;
+    box-shadow: 0 0.5px 2px violet;
+    padding: 0.5rem;
+}
