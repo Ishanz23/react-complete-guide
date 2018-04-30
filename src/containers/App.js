@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Radium, { StyleRoot } from 'radium';
 import classes from './App.css';
-import Person from './Person/Person';
-import Validation from './Validation/Validation';
-import Characters from './Characters/Characters';
+import Validation from '../components/Validation/Validation';
+import Characters from '../components/Characters/Characters';
+import Persons from '../components/Persons/Persons';
 
 class App extends Component {
 
@@ -92,14 +92,9 @@ class App extends Component {
     if (this.state.showPersons) {
       persons = (
         <div>
-          {this.state.persons.map((person, index) => {
-            return <Person 
-              click={this.deletePersonHandler.bind(this, index)}
-              change={(event) => this.nameChangeHandler(event, person.id)}
-              name={person.name}
-              age={person.age}
-              key={person.id}/>
-          })}
+          <Persons persons={this.state.persons}
+            click={this.deletePersonHandler}
+            change={this.nameChangeHandler}/>          
         </div>        
       );
       
