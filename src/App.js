@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Radium, { StyleRoot } from 'radium';
-import './App.css';
+import classes from './App.css';
 import Person from './Person/Person';
 import Validation from './Validation/Validation';
 import Characters from './Characters/Characters';
@@ -107,12 +107,12 @@ class App extends Component {
 
     return (
       <StyleRoot>      
-        <div className = "App" >
-          <h1 className = "title"> My First React App </h1>
+        <div className = {classes.App} >
+          <h1 className = {classes.title}> My First React App </h1>
           <button style={this.buttonStyle} onClick = {togglePersonsHandler}> Toggle Persons </button>
-          <div className = "fun">
+          <div className = {classes.fun}>
             <input type="text" onChange={event => this.funChangeHandler(event)} value={this.state.fun} />
-            <p className="fun-desc">Length of {this.state.fun} : {this.state.fun.length}</p>
+            <p className={classes['fun-desc']}>Length of {this.state.fun} : {this.state.fun.length}</p>
             <Validation funLength={this.state.fun.length}/>
           </div>
           {funCharacters}

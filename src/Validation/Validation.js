@@ -1,10 +1,10 @@
 import React from 'react';
-import './Validation.css';
+import classes from './Validation.css';
 
 const Validation = (props) => {
     let message = props.funLength < 5 ? 'Not enough fun!' : 'Beautiful!';
     return (
-        <div className="Validation">
+        <div className={classes.Validation}>
             <p>{message}</p>
         </div>
     );
